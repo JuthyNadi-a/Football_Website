@@ -1,5 +1,6 @@
 body{
-    font: font-family: 'Poppins', sans-serif;;
+    font: font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 nav{
     display: flex;
@@ -24,8 +25,10 @@ nav a{
 .top-banner{
     background-color: rgb(26, 26, 148);
     padding-left: 106px;
-    padding-top: 120px;;
+    padding-top: 120px;
+    margin-bottom: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 .half-width{
     width: 50%;
@@ -56,3 +59,82 @@ h1{
     width: 168px;
     padding: 10px 24px 10px 24px;
     }
+/* -------------- PLAYERs' SECTION 
+    -------------------*/
+    .players-album{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .player-frame{
+        width: 330px;
+        height: 475px;
+        margin: 10px;
+        padding: 15px 15px 15px 15px;
+        position: relative;
+        border-radius: 0;
+        overflow: hidden;
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px 2px rgb(221, 218, 218);
+    }
+    .player img{
+        width: 100%;
+        margin-right: 10px;
+        background-color: white;
+    }
+    .player-detail{
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: left;
+        background-color: white;
+    }
+    .player-detail h3{
+        color: black; 
+        text-align: left;
+        font-weight: 700;
+    }
+    .player-frame:hover .player-detail{
+        display: block;
+        background-color: rgba(202, 235, 235, 0.685);
+    }
+    
+    .player-frame:hover .player{
+        /* transform: scale(1.3) rotate(360deg); */
+        transform: scale(1.3) ;
+        transition: transform 2s ease-in-out;
+    }
+/*--------------- MATCH 
+                    VIDEOS ------------*/
+    .match-videos{
+        margin: 30px;
+    }
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin: 150px;
+        margin-bottom: 50px;
+        border: 3px solid skyblue;
+        box-shadow: 2px 2px 2px rgb(216, 214, 214);
+    }
+    .video-width{
+        display: flex;
+    }
+    .videos{
+        margin: 10px;
+    }
+    /* @media only screen (max-width: 688px) {
+        .player-frame{
+            background-color: chocolate;
+            margin-bottom: 20px;
+            grid-te
+        }
+        .player-album{
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 900px) {
+        .food{
+            background-color: yellowgreen;
+        }
+    } */
